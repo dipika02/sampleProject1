@@ -1,0 +1,35 @@
+body{
+    background-image: url('http://res2.windows.microsoft.com/resbox/en/windows%207/main/23d26ebe-b09b-414d-9d6a-635df9003b2d_5.jpg');
+    background-repeat: no-repeat;    
+    font-family:verdana;
+}
+.parent{
+    position:relative;    
+    width: 300px;
+    height:30px;
+   
+}
+.semi_transparent_bg{
+    position: absolute;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+    background-color: #fff;
+    width: 300px;
+    height:30px;
+     border-radius:3px;
+    z-index:1;
+}
+.child_content{
+    position:absolute;
+    width: 300px;
+    height:30px;
+    z-index:2;
+}
+.child_content h2{
+    font:bold 24px/30px Arial, Sans-serif;
+    padding:0;
+    margin:0;
+    color:black;
+    text-align: center;
+}
